@@ -31,6 +31,7 @@
 //     }
 // }
 
+//------------------------------------------------------------------------------------------------------------------------------
 
 // Q2 Write a program 
 //  n=38   -> n=3+8=11  -> n=11 -> n=1+1 -> n=2 continue same process until we get the one digit number 
@@ -58,6 +59,9 @@
 //         System.out.println(num);
 //     }
 // }
+
+//------------------------------------------------------------------------------------------------------------------------------
+
 
 //Q3  reverse the sting before the space occur
 
@@ -91,7 +95,7 @@
 //     }
 // }
 
-
+//------------------------------------------------------------------------------------------------------------------------------
 
 // Q4  print the similar value present in the both the array
 // class Test{
@@ -117,6 +121,7 @@
 
 //     }
 // }
+
 
 
 // second way
@@ -149,3 +154,29 @@
 //         return commomset;
 //     }
 // }
+
+//------------------------------------------------------------------------------------------------------------------------------
+
+// Q5 Write a program in which sum of two array element is equal to element present in array print that pair of number
+
+// class Test
+// {
+//    public static void main(String[] args) {
+//     int[] arr={2,8,7,1,5};
+//     for(int i=0;i<arr.length;i++)
+//     {
+//         for(int j=i+1;j<arr.length;j++)
+//         {
+//             int x=arr[i]+arr[j];
+//             for(int k=0;k<arr.length;k++)
+//             {
+//                 if(arr[k]==x)
+//                 {
+//                     System.out.println(arr[i]+" "+arr[j]);
+//                 }
+//             }
+//         }
+//     }
+//    }
+// }
+
