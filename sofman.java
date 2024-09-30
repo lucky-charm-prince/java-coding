@@ -61,32 +61,91 @@
 
 //Q3  reverse the sting before the space occur
 
-class Test
-{
-    public static void main(String[] args) {
-        String str="olleh dlrow avaj";
-        int k=0;
-        String s2="";
-        for(int i=0;i<str.length();i++)
-         {
-             if(str.charAt(i)==' ')
-             {
-                s2=s2+revString(str.substring(k, i))+" ";
-                k=i+1;
-             }
+// class Test
+// {
+//     public static void main(String[] args) {
+//         String str="olleh dlrow avaj";
+//         int k=0;
+//         String s2="";
+//         for(int i=0;i<str.length();i++)
+//          {
+//              if(str.charAt(i)==' ')
+//              {
+//                 s2=s2+revString(str.substring(k, i))+" ";
+//                 k=i+1;
+//              }
 
-         }
-         s2=s2+revString(str.substring(k,str.length()));
+//          }
+//          s2=s2+revString(str.substring(k,str.length()));
 
-        System.err.println(s2);
-    }
+//         System.err.println(s2);
+//     }
 
-    public static String revString(String str)
-    {
-        if(str.length()==0)
-        {
-            return "";
-        }
-        return revString( str.substring(1,str.length()))+str.charAt(0);
-    }
-}
+//     public static String revString(String str)
+//     {
+//         if(str.length()==0)
+//         {
+//             return "";
+//         }
+//         return revString( str.substring(1,str.length()))+str.charAt(0);
+//     }
+// }
+
+
+
+// Q4  print the similar value present in the both the array
+// class Test{
+//     public static void main(String[] args) {
+//         int[] arr1={3,4,6,7,5};
+//         int []arr2={1,5,2,3,9,6,9,};
+//  int[] arr3=new int[arr1.length];
+//  int k=0;
+//         for(int i=0;i<arr1.length;i++)
+//         {
+//             for(int j=0;j<arr2.length;j++)
+//             {
+//                 if(arr1[i]==arr2[j])
+//                 {
+//                     arr3[k++]=arr1[i];
+//                 }
+//             }
+//         }
+//         for(int i=0;i<k;i++)
+//         {
+//             System.out.println(arr3[i]+" ");
+//         }
+
+//     }
+// }
+
+
+// second way
+// import java.util.HashSet;
+// import java.util.Set;
+// class Test{
+//     public static void main(String[] args) {
+//         int[] arr1={3,4,6,6,67,5};
+//                 int []arr2={1,5,2,3,9,6,9,};
+// Set<Integer> s=findCommonElement(arr1, arr2);
+// System.err.println(s);
+
+//     }
+
+//     public static Set<Integer> findCommonElement(int[] arr1,int[] arr2)
+//     {
+//         Set<Integer> s1=new HashSet<>();
+//         Set<Integer> commomset=new HashSet<>();
+//         for(int num:arr1)
+//         {
+//             s1.add(num);
+//         }
+//         for(int num2:arr2)
+//         {
+//             if(s1.contains(num2))
+//             {
+//                 commomset.add(num2);
+//             }
+//         }
+//         return commomset;
+//     }
+// }
