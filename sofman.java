@@ -180,3 +180,32 @@
 //    }
 // }
 
+//------------------------------------------------------------------------------------------------------------------------------
+
+//Q6 Write a program to shift all the zero present in array at the end 
+
+// class Test
+// {
+//     public static void main(String[] args) {
+//         int[] arr={0,1,0,5,1,0,32};
+//         int k=0,coun=0;
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             if(coun!=0 && arr[i]!=0)
+//             {
+//                 arr[k]=arr[i];
+//                 arr[i]=0
+//                 k=i;
+//             }
+//             if(count==0 && arr[i]==0)
+//             {
+//                 count++;
+//                 k=i;
+//             }
+//         }
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             System.out.println(arr[i]);
+//         }
+//     }
+// }
