@@ -1,33 +1,61 @@
-//write a program in java for an array the length , n=length of array divider by the distinct value store in array . Print the number and its count greater than n in java
-import java.util.*;
-class Test
-{
-    public static void main(String[] args) {
-        Map<Integer,Integer> map= new HashMap<>();
-        int i=0;
-        int[] arr={3,3,4,1,1,2,2,2,5};
-        for(int x:arr)
-        {
-            if(!map.containsKey(x))
-            {
-                int coun=0;
-                map.put(x, ++coun);
-                i++;
-            }
-            else 
-            {
-                int k=map.get(x);
-                map.replace(x, ++k);
-            }
-        }
+// Q1 write a program in java for an array the length , n=length of array divider by the distinct value store in array . Print the number and its count greater than n in java
+// import java.util.*;
+// class Test
+// {
+//     public static void main(String[] args) {
+//         Map<Integer,Integer> map= new HashMap<>();
+//         int i=0;
+//         int[] arr={3,3,4,1,1,2,2,2,5};
+//         for(int x:arr)
+//         {
+//             if(!map.containsKey(x))
+//             {
+//                 int coun=0;
+//                 map.put(x, ++coun);
+//                 i++;
+//             }
+//             else 
+//             {
+//                 int k=map.get(x);
+//                 map.replace(x, ++k);
+//             }
+//         }
         
-        for(Integer x: map.keySet())
-        {
-            if(map.get(x)>(arr.length/i))
-            {
-                System.out.println(x +" "+map.get(x));
-            }
-        }
-    }
-}
+//         for(Integer x: map.keySet())
+//         {
+//             if(map.get(x)>(arr.length/i))
+//             {
+//                 System.out.println(x +" "+map.get(x));
+//             }
+//         }
+//     }
+// }
+
+
+// Q2 Write a program 
+//  n=38   -> n=3+8=11  -> n=11 -> n=1+1 -> n=2 continue same process until we get the one digit number 
+
+// class Test{
+//     public static void main(String[] args) {
+//         int num=38;
+//         int sum=0;
+//         while(num>=10)
+//         {
+//             while(num>9)
+//             {
+//                 sum=sum+(num%10);
+//                 num=num/10;
+//                 if(num<10)
+//                 {
+//                     sum=sum+num;
+//                     break;
+//                 }
+//             }
+            
+//             num=sum;
+//             sum=0;
+//         }
+//         System.out.println(num);
+//     }
+// }
 
