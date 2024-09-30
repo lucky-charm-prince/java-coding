@@ -59,3 +59,34 @@
 //     }
 // }
 
+//Q3  reverse the sting before the space occur
+
+class Test
+{
+    public static void main(String[] args) {
+        String str="olleh dlrow avaj";
+        int k=0;
+        String s2="";
+        for(int i=0;i<str.length();i++)
+         {
+             if(str.charAt(i)==' ')
+             {
+                s2=s2+revString(str.substring(k, i))+" ";
+                k=i+1;
+             }
+
+         }
+         s2=s2+revString(str.substring(k,str.length()));
+
+        System.err.println(s2);
+    }
+
+    public static String revString(String str)
+    {
+        if(str.length()==0)
+        {
+            return "";
+        }
+        return revString( str.substring(1,str.length()))+str.charAt(0);
+    }
+}
