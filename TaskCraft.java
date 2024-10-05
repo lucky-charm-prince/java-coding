@@ -30,29 +30,65 @@
 
 // Q  find the given interger is palindrom or not?
 
+// class Test 
+// {
+//     public static void main(String[] args)
+//     {
+//         int n=121;
+//         int a=n;
+//         int x=0;
+//         while(n>0)
+//         {
+            
+//                 x=x*10;
+//                 x=x+(n%10);
+//                 n=n/10;
+//         }
+        
+//         if(x==a)
+//         {
+//             System.out.println("Pallindwom");
+//         }
+//         else 
+//         {
+//             System.out.println("not a Pallindwom");
+//         }
+
+//     }
+// }
+
+
+Q pattern 
+// 0
+// 01
+// 012
+// 0123
+// 01234
+// 0123
+// 012
+// 01
+// 0
+
 class Test 
 {
     public static void main(String[] args)
     {
-        int n=121;
-        int a=n;
-        int x=0;
-        while(n>0)
+        int n=10;
+        for(int i=0;i<n;i++)
         {
+            for(int j=0;j<n/2;j++)
+            {
+                if(j<=i && i<n/2)
+                {
+                    System.out.print(j);
+                }
+                if((i+j<n-1) && (i>=n/2))
+                {
+                    System.out.print(j);
+                } 
+            }
+            System.out.println();
             
-                x=x*10;
-                x=x+(n%10);
-                n=n/10;
         }
-        
-        if(x==a)
-        {
-            System.out.println("Pallindwom");
-        }
-        else 
-        {
-            System.out.println("not a Pallindwom");
-        }
-
     }
 }
