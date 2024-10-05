@@ -49,3 +49,31 @@ class Test
 }
 
 
+// input String s="i love india";
+// output String s="india love i";
+class Test {
+    public static void main(String[] args) {
+        String s="i love programming so much";
+        String s1=reverseString(s);
+        s="";
+        int k=0;
+        for(int i=0;i<s1.length();i++)
+        {
+            if(s1.charAt(i)==' ')
+            {
+                s=s+reverseString(s1.substring(k,i))+" ";
+                k=i+1;
+            }
+        }
+        s=s+reverseString(s1.substring(k));
+        System.out.println(s);
+}
+    public static String reverseString(String s)
+    {
+        if(s.isEmpty())
+        {
+            return "";
+        }
+        return reverseString(s.substring(1))+s.charAt(0);
+    }
+}
